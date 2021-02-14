@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block main %}
+<body>
+    <div id="profile_container">
+        <img src="{{ url_for('static', filename='benio.jpg') }}">
+        <h2>Justin Ho Lung</h2>
+        <h6>@jussn</h6>
+        <h6>Kingston, Jamaica</h6>
+        <h6>Joined {{now}}</h6>
+        <p>This is a short bio.</p>
+    </div>
+    <div id="container">
+        <div>
+            <p>1</p>
+            <p>Posts</p>
+        </div>
+        <div>
+            <p>1</p>
+            <p>Following</p>
+        </div>
+        <div>
+            <p>1</p>
+            <p>Followers</p>
+        </div>
+    </div>
+
+    <button>Follow</button>
+</body>
+{% endblock %}
